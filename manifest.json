@@ -15,7 +15,7 @@
         "comprendre"
       ],
       "created": "2025-07-22",
-      "thumb": "/thumbs/kit.jpg"
+      "thumb": "./thumbs/kit.jpg"
     },
     {
       "id": "de-l-auftragstaktik-militaire-la-participation-citoyenne-consciente",
@@ -30,7 +30,7 @@
         "comprendre"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/Hans Fritz.jpg"
+      "thumb": "./thumbs/Hans Fritz.jpg"
     },
     {
       "id": "la-citoyennet-c-est-le-brol-un-syst-me-complexe-en-perspective",
@@ -45,7 +45,7 @@
         "citoyenneté"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/login.jpg"
+      "thumb": "./thumbs/login.jpg"
     },
     {
       "id": "approche-critique-corpus",
@@ -60,7 +60,7 @@
         "doc"
       ],
       "created": "2025-07-26",
-      "thumb": "/thumbs/logo.jpg"
+      "thumb": "./thumbs/logo.jpg"
     },
     {
       "id": "rapport-sur-les-d-rives-dystopiques-mondiales-actuelles",
@@ -75,7 +75,7 @@
         "doc"
       ],
       "created": "2025-07-28",
-      "thumb": "/thumbs/dystop.jpg"
+      "thumb": "./thumbs/dystop.jpg"
     },
     {
       "id": "comprendre-l-volution-des-changes-de-l-intelligence-la-stupidit-conomiques",
@@ -90,7 +90,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "images/coin.png"
+      "thumb": "./thumbs/coin.png"
     },
     {
       "id": "guide-pour-d-velopper-un-r-seau-collectif-de-veille-citoyenne-en-ducation-permanente-fwb",
@@ -105,7 +105,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb":"/thumbs/organigramme.jpg"
+      "thumb":"./thumbs/organigramme.jpg"
     },
     {
       "id": "l-impact-de-la-surcharge-informationnelle-sur-la-soci-t-et-les-individus",
@@ -135,7 +135,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/dics.jpg"
+      "thumb": "./thumbs/dics.jpg"
     },
     {
       "id": "le-mouvement-ouvrier-chr-tien-moc-en-belgique-recherche-approfondie",
@@ -150,7 +150,7 @@
         "doc"
       ],
       "created": "2025-07-23",
-      "thumb": "/thumbs/Mage centriste.jpg"
+      "thumb": "./thumbs/Mage centriste.jpg"
     },
     {
       "id": "dynamiques-institutionnelles-et-politiques-de-la-belgique-pilarisation-particratie-compromis-et",
@@ -165,7 +165,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/bxl-header.jpg"
+      "thumb": "./thumbs/bxl-header.jpg"
     },
     {
       "id": "tat-des-lieux-des-civic-tech-et-de-l-open-data-en-belgique",
@@ -180,7 +180,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/logo.jpg"
+      "thumb": "./thumbs/logo.jpg"
 
     },
     {
@@ -196,7 +196,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "/gifs/speaker.gif"
+      "thumb": "./thumbs/speaker.gif"
     },
     {
       "id": "de-pikachu-r-mi-vomi-la-pop-culture-entre-ic-nes-plan-taires-et-h-ros-oubli-s",
@@ -211,7 +211,7 @@
         "doc"
       ],
       "created": "2025-07-23",
-      "thumb": "/gifs/lapin.gif"
+      "thumb": "./thumbs/lapin.gif"
     },
     {
       "id": "la-guerre-conomique-et-ses-r-percussions-sur-la-soci-t-civile-aux-xxe-et-xxie-si-cles",
@@ -226,7 +226,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/tamponALLO.jpg"
+      "thumb": "./thumbs/tamponALLO.jpg"
     },
     {
       "id": "veille-citoyenne-en-f-d-ration-wallonie-bruxelles-enjeux-strat-giques-inclusion-et-perspectives",
@@ -241,7 +241,7 @@
         "doc"
       ],
       "created": "2025-07-21",
-      "thumb": "/thumbs/organigramme.jpg"
+      "thumb": "./thumbs/organigramme.jpg"
     },
     {
     "id": "make-chunk-all",
@@ -253,7 +253,7 @@
     "size": 5439,
     "tags": ["enfer", "damnation"],
     "created": "1957-09-13",
-    "thumb": "/thumbs/jason-manifest-json.jpg"
+    "thumb": "./thumbs/jason-manifest-json.jpg"
     },
     {
     "id": "smoke",
@@ -265,7 +265,7 @@
     "size": 1614133,
     "tags": ["enfer", "damnation"],
     "created": "2025-07-27",
-    "thumb": "thumbs/smoke.jpg"
+    "thumb": "./thumbs/smoke.jpg"
     },
     {
     "id": "article-pkm",
@@ -277,7 +277,7 @@
     "size": 45373,
     "tags": ["doc", "agir"],
     "created": "2025-07-30",
-    "thumb": "/thumbs/logo.jpg"
+    "thumb": "./thumbs/logo.jpg"
 
     },
     {
@@ -290,7 +290,7 @@
     "size": 74849,
     "tags": ["guide", "obsidian"],
     "created": "2025-07-23",
-    "thumb": "thumbs/obs.jpg",
+    "thumb": "./thumbs/obs.jpg",
     "badges": ["star"] 
     },
     {
@@ -303,7 +303,7 @@
     "size": 106952,
     "tags": [],
     "created": "2025-07-11",
-    "thumb": "/thumbs/organigramme.jpg"
+    "thumb": "./thumbs/organigramme.jpg"
     },
     {
     "id": "tutoriel-obsidian",
@@ -315,7 +315,7 @@
     "size": 71650,
     "tags": ["guide", "obsidian"],
     "created": "2025-07-29",
-    "thumb": "thumbs/obs.jpg",
+    "thumb": "./thumbs/obs.jpg",
     "badges": ["star"] 
 
     },
@@ -324,7 +324,7 @@
     "title": "Titre lisible de l’item",
     "description": "La « fenêtre d’Overton » est un concept qui décrit l’éventail des idées et des politiques considérées comme acceptables dans l’opinion publique à un moment donné. Ce cadre peut être influencé par des discours, des événements ou des stratégies médiatiques.",
     "note": "Ceci n'est pas un fenêtre",
-    "thumb": "/thumbs/overton.jpg",
+    "thumb": "./thumbs/overton.jpg",
     "info": "https://ouaisfi.eu/up-yours#la-fenetre-d-overton",
     "run": "https://ouaisfi.eu/user/pages/05.up-yours/foverton.png",
     "url": "https://ouaisfi.eu/up-yours#la-fenetre-d-overton",
@@ -341,7 +341,7 @@
     "url": "kits/☯ ASTRO.zip",
     "run": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 116781,
     "tags": [],
@@ -355,7 +355,7 @@
     "url": "/☯ EMOTIONS.zip",
     "run": "",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 65456,
     "tags": [],
@@ -369,7 +369,7 @@
     "url": "/☯ EQUIPE.zip",
     "run": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 27512,
     "tags": [],
@@ -383,7 +383,7 @@
     "url": "/☯ INTRO.zip",
     "run": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 62141,
     "tags": [],
@@ -397,7 +397,7 @@
     "url": "/☯ MYTHES ET LEGENDES.zip",
     "run": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 108283,
     "tags": [],
@@ -411,7 +411,7 @@
     "url": "/☯ Perso.zip",
     "run": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 75310,
     "tags": [],
@@ -425,7 +425,7 @@
     "url": "/☯ VALEURS.zip",
     "run": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
     "info": "https://publish.obsidian.md/ouaisfieu/%E2%96%B6+NOS+KITS+%E2%97%80/Kits",
-    "thumb": "/thumbs/kit.jpg",
+    "thumb": "./thumbs/kit.jpg",
     "type": "zip",
     "size": 39427,
     "tags": [],
