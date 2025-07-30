@@ -11,11 +11,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dl.ouaisfi.eu/" />
   <link rel="preload" as="fetch" href="./manifest.json" type="application/json" crossorigin="anonymous" />
+  <!-- Chemin vers votre feuille fx.css : adaptez si besoin (./css/fx.css, /fx.css, etc.) -->
   <link rel="stylesheet" href="/fx.css">
   <style>
-
-
-    /* ===== Réservations anti‑CLS ===== */
+    /* ===== Réservations anti‑CLS et base ===== */
     .themeBtn{ min-width:12ch; white-space:nowrap; }
     #typeChips, #tagChips { min-height:38px; }
     .grid{ min-height:520px; }
@@ -23,7 +22,6 @@
     .thumb{ width:100%; aspect-ratio:16/9; border-radius:12px; object-fit:cover; background:var(--soft); border:var(--border); }
     .thumb[hidden]{ display:none; }
 
-    /* ===== Palette & theming (néon) ===== */
     :root{
       --neon:#39ff14; --neon-glow:0 0 0 2px rgba(57,255,20,.20), 0 0 12px rgba(57,255,20,.35), 0 8px 20px rgba(57,255,20,.16);
       --bg:#0b0c0f; --panel:#12141a; --soft:#181b23; --text:#e9eef3; --muted:#aeb8c3;
@@ -43,7 +41,6 @@
       --bg:#0b0c0f; --panel:#12141a; --soft:#181b23; --text:#e9eef3; --muted:#aeb8c3; --accent:#4DD0E1; --accent-2:#A78BFA;
       --shadow:0 10px 30px rgba(0,0,0,.35); --ring:0 0 0 3px rgba(77,208,225,.35); --border:1px solid rgba(255,255,255,.08); --link:#9ad7ff; }
 
-    /* ===== Base ===== */
     *{ box-sizing:border-box; }
     html,body{ margin:0; padding:0; }
     body{
@@ -57,7 +54,6 @@
     a:hover{ text-decoration:underline; }
     .container{ width:min(1100px,92vw); margin:0 auto; padding:1rem 0 4rem; }
 
-    /* ===== Header ===== */
     header.hero{ padding:clamp(1.5rem,3vw,2.5rem) 0 1rem; }
     .brand{ display:flex; align-items:center; gap:.75rem; color:var(--text); text-decoration:none; font-weight:700; letter-spacing:.2px; }
     .brand .logo{ width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:grid; place-items:center; box-shadow:var(--shadow); color:#fff; font-size:1.1rem; font-weight:800; }
@@ -65,7 +61,6 @@
     p.subtitle{ margin:0 0 1rem; color:var(--muted); max-width:60ch; }
     .header-row{ display:flex; align-items:center; justify-content:space-between; gap:.75rem; flex-wrap:wrap; }
 
-    /* ===== Toolbar ===== */
     .toolbar{ background:var(--panel); border:var(--border); border-radius:18px; padding:1rem; display:grid; gap:.8rem; box-shadow:var(--shadow); }
     .searchwrap{ display:flex; align-items:stretch; background:var(--soft); border:var(--border); border-radius:999px; overflow:hidden; box-shadow:var(--neon-glow); }
     .searchwrap .icon{ padding:.65rem .8rem; color:var(--muted); display:grid; place-items:center; }
@@ -79,9 +74,6 @@
     .chip:focus-visible{ box-shadow:var(--ring); outline:none; }
     .chip[data-active="true"]{ background:linear-gradient(135deg, rgba(57,255,20,.08), rgba(77,208,225,.08)); border-color:rgba(57,255,20,.35); box-shadow:var(--neon-glow); font-weight:700; }
 
-    .themeBtn{ display:inline-flex; align-items:center; gap:.5rem; }
-
-    /* ===== Grid & Cards ===== */
     .grid{ margin-top:1rem; display:grid; grid-template-columns:repeat(12,1fr); gap:1rem; }
     @media (max-width:900px){ .grid{ grid-template-columns:repeat(6,1fr); } }
     @media (max-width:560px){ .grid{ grid-template-columns:repeat(2,1fr); } }
@@ -94,11 +86,9 @@
     .tags{ display:flex; flex-wrap:wrap; gap:.4rem; }
     .tag{ font-size:.78rem; padding:.25rem .5rem; border-radius:999px; background:var(--soft); border:var(--border); color:var(--muted); }
 
-    /* ===== Note courte ===== */
     .notechip{ display:inline-flex; align-items:center; gap:.4rem; width:fit-content; font-size:.85rem; color:var(--text); background:var(--soft); border:var(--border); border-radius:10px; padding:.25rem .5rem; box-shadow:var(--shadow); }
     .notechip::before{ content:"✎"; opacity:.8; }
 
-    /* ===== Boutons ===== */
     .actions{ display:grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap:.5rem; margin-top:.25rem; }
     .btn{ display:inline-flex; justify-content:center; align-items:center; gap:.45rem; background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#fff; border:0; border-radius:10px; padding:.55rem .75rem; text-decoration:none; font-weight:600; box-shadow:var(--shadow); width:100%; }
     .btn.secondary{ background:var(--soft); color:var(--text); border:var(--border); }
@@ -113,65 +103,18 @@
 
     /* === Badges visuels (mint & lilac + glow doux) === */
     .media{ position:relative; }
-    .badges{
-      position:absolute; left:8px; bottom:8px;
-      display:flex; gap:6px; flex-wrap:wrap; z-index:2;
-    }
-    .badge{
-      display:inline-flex; align-items:center; gap:.35rem;
-      padding:.22rem .55rem; border-radius:999px;
-      font-weight:800; font-size:.78rem; border:1px solid transparent;
-      backdrop-filter: blur(2px);
-    }
-    /* Famille MINT (vert tendre) */
-    .badge[data-v="new"],
-    .badge[data-v="updated"],
-    .badge[data-v="free"],
-    .badge[data-v="oss"],
-    .badge[data-v="pdf"],
-    .badge[data-v="zip"],
-    .badge[data-v="image"],
-    .badge[data-v="video"],
-    .badge[data-v="audio"],
-    .badge[data-v="md"]{
-      background: linear-gradient(135deg,#a7f3d0 0%,#34d399 100%);
-      color:#0b3d2c; border-color:rgba(52,211,153,.45);
+    .badges{ position:absolute; left:8px; bottom:8px; display:flex; gap:6px; flex-wrap:wrap; z-index:2; }
+    .badge{ display:inline-flex; align-items:center; gap:.35rem; padding:.22rem .55rem; border-radius:999px; font-weight:800; font-size:.78rem; border:1px solid transparent; backdrop-filter: blur(2px); }
+    .badge[data-v="new"], .badge[data-v="updated"], .badge[data-v="free"], .badge[data-v="oss"], .badge[data-v="pdf"], .badge[data-v="zip"], .badge[data-v="image"], .badge[data-v="video"], .badge[data-v="audio"], .badge[data-v="md"]{
+      background: linear-gradient(135deg,#a7f3d0 0%,#34d399 100%); color:#0b3d2c; border-color:rgba(52,211,153,.45);
       box-shadow:0 0 0 2px rgba(52,211,153,.25), 0 0 16px rgba(52,211,153,.35);
     }
-    [data-theme="light"] .badge[data-v="new"],
-    [data-theme="light"] .badge[data-v="updated"],
-    [data-theme="light"] .badge[data-v="free"],
-    [data-theme="light"] .badge[data-v="oss"],
-    [data-theme="light"] .badge[data-v="pdf"],
-    [data-theme="light"] .badge[data-v="zip"],
-    [data-theme="light"] .badge[data-v="image"],
-    [data-theme="light"] .badge[data-v="video"],
-    [data-theme="light"] .badge[data-v="audio"],
-    [data-theme="light"] .badge[data-v="md"]{ color:#064e3b; }
-    /* Famille LILAC (lilas, néon doux) */
-    .badge[data-v="star"],
-    .badge[data-v="beta"],
-    .badge[data-v="edu"],
-    .badge[data-v="script"],
-    .badge[data-v="ai"],
-    .badge[data-v="tip"]{
-      background: linear-gradient(135deg,#e9d5ff 0%,#a78bfa 100%);
-      color:#241a45; border-color:rgba(167,139,250,.50);
+    [data-theme="light"] .badge[data-v="new"], [data-theme="light"] .badge[data-v="updated"], [data-theme="light"] .badge[data-v="free"], [data-theme="light"] .badge[data-v="oss"], [data-theme="light"] .badge[data-v="pdf"], [data-theme="light"] .badge[data-v="zip"], [data-theme="light"] .badge[data-v="image"], [data-theme="light"] .badge[data-v="video"], [data-theme="light"] .badge[data-v="audio"], [data-theme="light"] .badge[data-v="md"]{ color:#064e3b; }
+    .badge[data-v="star"], .badge[data-v="beta"], .badge[data-v="edu"], .badge[data-v="script"], .badge[data-v="ai"], .badge[data-v="tip"]{
+      background: linear-gradient(135deg,#e9d5ff 0%,#a78bfa 100%); color:#241a45; border-color:rgba(167,139,250,.50);
       box-shadow:0 0 0 2px rgba(167,139,250,.25), 0 0 16px rgba(167,139,250,.35);
     }
-    [data-theme="light"] .badge[data-v="star"],
-    [data-theme="light"] .badge[data-v="beta"],
-    [data-theme="light"] .badge[data-v="edu"],
-    [data-theme="light"] .badge[data-v="script"],
-    [data-theme="light"] .badge[data-v="ai"],
-    [data-theme="light"] .badge[data-v="tip"]{ color:#1f1144; }
-    /* Couleur libre (si item.badges[].color est défini) */
-    .badge[data-color]{
-      background: color-mix(in srgb, rgba(255,255,255,.05) 30%, attr(data-color color) 70%);
-      border-color: color-mix(in srgb, #000 60%, attr(data-color color) 40%);
-      box-shadow: 0 0 0 2px color-mix(in srgb, attr(data-color color) 35%, transparent),
-                  0 0 16px color-mix(in srgb, attr(data-color color) 45%, transparent);
-    }
+    [data-theme="light"] .badge[data-v="star"], [data-theme="light"] .badge[data-v="beta"], [data-theme="light"] .badge[data-v="edu"], [data-theme="light"] .badge[data-v="script"], [data-theme="light"] .badge[data-v="ai"], [data-theme="light"] .badge[data-v="tip"]{ color:#1f1144; }
   </style>
 </head>
 <body>
@@ -241,6 +184,8 @@
     </div>
     <div class="modal-body" id="pvBody"></div>
   </dialog>
+
+  <!-- Bouton retour haut : styles dans fx.css -->
   <button id="toTop" class="toTop" aria-label="Revenir en haut" title="Haut">↑</button>
 
   <script>
@@ -462,14 +407,15 @@
       }else{
         el=document.createElement('div'); el.style.padding='14px';
         el.innerHTML=`<p>Aperçu non disponible. Vous pouvez le télécharger ou l'ouvrir.</p>
-                      <p><a class="btn secondary" href="${item.url}" target="_blank" rel="noopener">Ouvrir ↗</a>
-                         <a class="btn secondary" href="${item.url}" download>Télécharger</a></p>`;
+                      <p><a class="btn secondary" href="\${item.url}" target="_blank" rel="noopener">Ouvrir ↗</a>
+                         <a class="btn secondary" href="\${item.url}" download>Télécharger</a></p>`;
         pvBody.appendChild(el);
       }
       dlg.showModal();
     }
 
     pvClose.addEventListener('click', ()=> dlg.close());
+    // Correction du sélecteur (ajout du point pour .modal-head)
     dlg.addEventListener('click', (e)=>{ const within=e.target.closest('.modal-body,.modal-head'); if(!within) dlg.close(); });
 
     /* ===== Chargement manifest (robuste) ===== */
@@ -547,52 +493,24 @@
     const toTop = document.getElementById('toTop');
     let lastShow = false;
     function onScrollToTopBtn(){
-    const show = window.scrollY > 400;
-    if (show !== lastShow){
+      const show = window.scrollY > 400;
+      if (show !== lastShow){
         toTop.classList.toggle('show', show);
         lastShow = show;
-    }
+      }
     }
     window.addEventListener('scroll', onScrollToTopBtn, {passive:true});
     onScrollToTopBtn();
 
     toTop.addEventListener('click', (e)=>{
-    e.preventDefault();
-    // Si motion réduite, scroll instantané
-    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced) { window.scrollTo(0,0); }
-    else { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+      e.preventDefault();
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) { window.scrollTo(0,0); }
+      else { window.scrollTo({ top: 0, behavior: 'smooth' }); }
     });
-
-    // Gestion du bouton « Retour en haut »
-document.addEventListener('DOMContentLoaded', () => {
-  const toTopBtn = document.getElementById('toTop');
-  if (!toTopBtn) return;
-
-  let lastShow = false;
-  // Fonction qui montre/cache le bouton selon la hauteur de scroll
-  function toggleToTop() {
-    const show = window.scrollY > 400;          // seuil d’affichage (en px)
-    if (show !== lastShow) {
-      toTopBtn.classList.toggle('show', show);
-      lastShow = show;
-    }
-  }
-  window.addEventListener('scroll', toggleToTop, { passive: true });
-  toggleToTop();
-
-  // Retour en haut en douceur au clic, avec respect de la préférence utilisateur
-  toTopBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const prefersReduced = window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
-  });
-
 
   })();
   </script>
-<button id="toTop" class="toTop" aria-label="Revenir en haut" title="Haut">↑</button>
 
 </body>
 </html>
