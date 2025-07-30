@@ -1,0 +1,26 @@
+/* fx.css — effets de mise en avant */
+:root{
+  --fx-mint-1:#a7f3d0; --fx-mint-2:#34d399;
+  --fx-lilac-1:#e9d5ff; --fx-lilac-2:#a78bfa;
+  --fx-text:#0f172a; --fx-text-inv:#e9eef3; --fx-paper:#f8fafc;
+}
+[data-theme="dark"]{ --fx-text:#e9eef3; --fx-text-inv:#0b0c0f; --fx-paper:#e5e7eb; }
+.fx{ font-weight:800; letter-spacing:.2px; }
+.fx-highlight{ color:var(--fx-text); background:linear-gradient(transparent 55%, color-mix(in srgb, var(--fx-paper) 65%, var(--fx-mint-1) 35%) 55%) no-repeat; padding-inline:.15em; border-radius:.2em; }
+.fx-highlight--lilac{ background:linear-gradient(transparent 55%, color-mix(in srgb, var(--fx-paper) 65%, var(--fx-lilac-1) 35%) 55%) no-repeat; }
+.fx-neon-mint{ color:var(--fx-mint-2); text-shadow:0 0 2px color-mix(in srgb, var(--fx-mint-2) 80%, transparent),0 0 10px color-mix(in srgb, var(--fx-mint-2) 60%, transparent),0 0 20px color-mix(in srgb, var(--fx-mint-2) 40%, transparent); }
+.fx-neon-lilac{ color:var(--fx-lilac-2); text-shadow:0 0 2px color-mix(in srgb, var(--fx-lilac-2) 80%, transparent),0 0 10px color-mix(in srgb, var(--fx-lilac-2) 60%, transparent),0 0 20px color-mix(in srgb, var(--fx-lilac-2) 40%, transparent); }
+.fx-flicker{ animation:fx-flicker 2.8s infinite steps(1) both; } @keyframes fx-flicker{0%,7%,9%,11%,100%{opacity:1}8%,10%{opacity:.72}45%{opacity:.88}46%{opacity:.6}} @media (prefers-reduced-motion:reduce){.fx-flicker{animation:none}}
+.fx-glitch{ position:relative; display:inline-block; text-shadow:0 0 1px #0008; }
+.fx-glitch::before,.fx-glitch::after{ content:attr(data-text); position:absolute; inset:0; pointer-events:none; mix-blend-mode:screen; clip-path:inset(0); }
+.fx-glitch::before{ color:#f00 } .fx-glitch::after{ color:#0ff }
+.fx-anim.fx-glitch::before{ animation:fx-glitch-h 2.2s infinite linear } .fx-anim.fx-glitch::after{ animation:fx-glitch-h 2.2s infinite linear reverse }
+@keyframes fx-glitch-h{0%{transform:translate(0,0)}10%{transform:translate(-1px,0)}20%{transform:translate(1px,0)}40%{transform:translate(2px,0)}70%{transform:translate(-2px,0)}100%{transform:translate(0,0)}}
+.fx-crt{ position:relative; color:var(--fx-text-inv); text-shadow:0 0 2px #0ff8,0 0 8px #0ff6,0 0 18px #0ff4; }
+.fx-crt::after{ content:""; position:absolute; inset:0; background:repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, transparent 1px 3px); mix-blend-mode:overlay; pointer-events:none; opacity:.4; border-radius:.1em; }
+.fx-gradient-lilac,.fx-gradient-mint{ background-clip:text; -webkit-background-clip:text; color:transparent; -webkit-text-fill-color:transparent; }
+.fx-gradient-lilac{ background-image:linear-gradient(135deg,var(--fx-lilac-1),var(--fx-lilac-2)) }
+.fx-gradient-mint{ background-image:linear-gradient(135deg,var(--fx-mint-1),var(--fx-mint-2)) }
+/* Back-to-top styles */
+.toTop{position:fixed;right:20px;bottom:20px;z-index:50;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(135deg,#4DD0E1,#A78BFA);color:#fff;font-weight:800;display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .2s,transform .2s}
+.toTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}

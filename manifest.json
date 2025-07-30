@@ -1,0 +1,323 @@
+{
+  "items": [
+    {
+      "id": "ui-badges",
+      "title": "Interface du magasin (badges.html)",
+      "description": "Page unique qui lit manifest.json et affiche la bibliothèque.",
+      "thumb": "./thumbs/ui-badges.svg",
+      "url": "./badges.html",
+      "type": "other",
+      "tags": [
+        "ui",
+        "html",
+        "essentiel"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "star"
+      ]
+    },
+    {
+      "id": "css-fx",
+      "title": "Effets de mise en avant (fx.css)",
+      "description": "Néons mint/lilas, surlignage, glitch, CRT, Halloween. Optionnel.",
+      "thumb": "./thumbs/css-fx.svg",
+      "url": "./css/fx.css",
+      "type": "other",
+      "tags": [
+        "css",
+        "fx",
+        "optionnel"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "tip"
+      ]
+    },
+    {
+      "id": "doc-guide-bibliotheque",
+      "title": "Créer sa bibliothèque (tutoriel complet)",
+      "description": "Installation, structure, manifest.json, vignettes, déploiement.",
+      "thumb": "./thumbs/guide-biblio.svg",
+      "url": "./md/guide-bibliotheque.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "guide",
+        "manifest"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md",
+        "edu"
+      ]
+    },
+    {
+      "id": "doc-guide-ultime-item",
+      "title": "Guide ultime : créer un item",
+      "description": "Champs, liens, boutons, vignettes, badges, effets, perfs, pièges.",
+      "thumb": "./thumbs/guide-biblio.svg",
+      "url": "./md/guide-ultime-item.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "item",
+        "référence"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md",
+        "edu"
+      ]
+    },
+    {
+      "id": "doc-legende-badges",
+      "title": "Légende des badges (référence rapide)",
+      "description": "Clés manifest, rendu, quand les utiliser. Exemples JSON.",
+      "thumb": "./thumbs/legende-badges.svg",
+      "url": "./md/legende-badges.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "badges",
+        "ui"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md",
+        "tip"
+      ]
+    },
+    {
+      "id": "doc-effets-fx",
+      "title": "Effets de texte (fx.css) — guide",
+      "description": "Surlignage doux, néons, glitch/CRT, variantes saisonnières.",
+      "thumb": "./thumbs/css-fx.svg",
+      "url": "./md/guide-effets-fx.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "css",
+        "fx"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md",
+        "tip"
+      ]
+    },
+    {
+      "id": "doc-faq-depannage",
+      "title": "FAQ / Dépannage",
+      "description": "Téléchargement cross‑origin, aperçu PDF, chemins, perfs 100+ items.",
+      "thumb": "./thumbs/readme.svg",
+      "url": "./md/faq-depannage.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "faq",
+        "support"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md"
+      ]
+    },
+    {
+      "id": "doc-5whys",
+      "title": "L’idée derrière en 5 « pourquoi »",
+      "description": "Pourquoi statique, pourquoi manifest, pourquoi une seule page.",
+      "thumb": "./thumbs/readme.svg",
+      "url": "./md/5whys.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "vision",
+        "pourquoi"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md"
+      ]
+    },
+    {
+      "id": "schema-manifest",
+      "title": "Schéma JSON du manifest",
+      "description": "Validation des champs : items[].title/url/type/tags…",
+      "thumb": "./thumbs/schema.svg",
+      "url": "./schema/manifest.schema.json",
+      "type": "other",
+      "tags": [
+        "schema",
+        "json",
+        "qualité"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "oss",
+        "tip"
+      ]
+    },
+    {
+      "id": "validator-web",
+      "title": "Validateur de manifest (web)",
+      "description": "Page locale : collez ou ouvrez un manifest, validation live.",
+      "thumb": "./thumbs/validator.svg",
+      "run": "./scripts/validate.html",
+      "url": "./zips/validator-web.zip",
+      "type": "script",
+      "tags": [
+        "script",
+        "qualité",
+        "web"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "beta",
+        "script"
+      ]
+    },
+    {
+      "id": "generator-cli",
+      "title": "Générateur de manifest (CLI)",
+      "description": "Scanne un dossier, produit manifest.json (title/url/type/size/created).",
+      "thumb": "./thumbs/generator.svg",
+      "url": "./zips/manifest-generator-cli.zip",
+      "type": "zip",
+      "tags": [
+        "zip",
+        "cli",
+        "outil"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "zip",
+        "oss"
+      ]
+    },
+    {
+      "id": "editor-gui",
+      "title": "Éditeur graphique d’items (web)",
+      "description": "Formulaire pour créer/éditer un item puis exporter le JSON.",
+      "thumb": "./thumbs/editor-gui.svg",
+      "run": "./scripts/editor.html",
+      "url": "./zips/editor-gui.zip",
+      "type": "script",
+      "tags": [
+        "script",
+        "ui",
+        "outil"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "beta",
+        "script"
+      ]
+    },
+    {
+      "id": "readme-github",
+      "title": "README pour GitHub",
+      "description": "Présentation courte, démarrage, licence.",
+      "thumb": "./thumbs/readme.svg",
+      "url": "./md/README.md",
+      "type": "md",
+      "tags": [
+        "doc",
+        "github",
+        "template"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md"
+      ]
+    },
+    {
+      "id": "licence-mit",
+      "title": "LICENCE — MIT",
+      "description": "Licence permissive recommandée.",
+      "thumb": "./thumbs/license.svg",
+      "url": "./md/LICENSE-MIT.md",
+      "type": "md",
+      "tags": [
+        "licence",
+        "legal",
+        "template"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md"
+      ]
+    },
+    {
+      "id": "contributing",
+      "title": "CONTRIBUTING — comment contribuer",
+      "description": "Issues, PR, style, validation du manifest.",
+      "thumb": "./thumbs/contributing.svg",
+      "url": "./md/CONTRIBUTING.md",
+      "type": "md",
+      "tags": [
+        "oss",
+        "process",
+        "template"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "md",
+        "oss"
+      ]
+    },
+    {
+      "id": "issue-templates",
+      "title": "Issue templates (GitHub)",
+      "description": "Bug report, feature request, question.",
+      "thumb": "./thumbs/issues.svg",
+      "url": "./zips/issue-templates.zip",
+      "type": "zip",
+      "tags": [
+        "github",
+        "template",
+        "qualité"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "zip",
+        "tip"
+      ]
+    },
+    {
+      "id": "thumbs-pack",
+      "title": "Pack de vignettes 16:9 (exemples)",
+      "description": "Fonds sobres mint/lilac, titres lisibles.",
+      "thumb": "./thumbs/thumbs-pack.svg",
+      "url": "./zips/thumbs-pack.zip",
+      "type": "zip",
+      "tags": [
+        "thumbs",
+        "ressource",
+        "ui"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "zip"
+      ]
+    },
+    {
+      "id": "themes-pack",
+      "title": "Pack de thèmes badges/FX",
+      "description": "Halloween, Noël, Vaporwave (CSS prêts).",
+      "thumb": "./thumbs/themes.svg",
+      "url": "./zips/themes-pack.zip",
+      "type": "zip",
+      "tags": [
+        "css",
+        "theme",
+        "fx"
+      ],
+      "created": "2025-07-30",
+      "badges": [
+        "zip",
+        "beta"
+      ]
+    }
+  ]
+}
