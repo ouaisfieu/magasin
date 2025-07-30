@@ -564,9 +564,35 @@
     else { window.scrollTo({ top: 0, behavior: 'smooth' }); }
     });
 
+    // Gestion du bouton « Retour en haut »
+document.addEventListener('DOMContentLoaded', () => {
+  const toTopBtn = document.getElementById('toTop');
+  if (!toTopBtn) return;
+
+  let lastShow = false;
+  // Fonction qui montre/cache le bouton selon la hauteur de scroll
+  function toggleToTop() {
+    const show = window.scrollY > 400;          // seuil d’affichage (en px)
+    if (show !== lastShow) {
+      toTopBtn.classList.toggle('show', show);
+      lastShow = show;
+    }
+  }
+  window.addEventListener('scroll', toggleToTop, { passive: true });
+  toggleToTop();
+
+  // Retour en haut en douceur au clic, avec respect de la préférence utilisateur
+  toTopBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const prefersReduced = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+  });
+
 
   })();
   </script>
+<button id="toTop" class="toTop" aria-label="Revenir en haut" title="Haut">↑</button>
 
 </body>
 </html>
