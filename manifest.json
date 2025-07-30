@@ -4,7 +4,7 @@
       "id": "ui-badges",
       "title": "Interface du magasin (badges.html)",
       "description": "Page unique qui lit manifest.json et affiche la bibliothèque.",
-      "thumb": "./thumbs/ui-badges.svg",
+      "thumb": "./thumbs/1.jpg",
       "url": "./badges.html",
       "type": "other",
       "tags": [
@@ -21,7 +21,7 @@
       "id": "css-fx",
       "title": "Effets de mise en avant (fx.css)",
       "description": "Néons mint/lilas, surlignage, glitch, CRT, Halloween. Optionnel.",
-      "thumb": "./thumbs/css-fx.svg",
+      "thumb": "./thumbs/2.jpg",
       "url": "./css/fx.css",
       "type": "other",
       "tags": [
@@ -38,7 +38,7 @@
       "id": "doc-guide-bibliotheque",
       "title": "Créer sa bibliothèque (tutoriel complet)",
       "description": "Installation, structure, manifest.json, vignettes, déploiement.",
-      "thumb": "./thumbs/guide-biblio.svg",
+      "thumb": "./thumbs/3.jpg",
       "url": "./md/guide-bibliotheque.md",
       "type": "md",
       "tags": [
@@ -56,7 +56,7 @@
       "id": "doc-guide-ultime-item",
       "title": "Guide ultime : créer un item",
       "description": "Champs, liens, boutons, vignettes, badges, effets, perfs, pièges.",
-      "thumb": "./thumbs/guide-biblio.svg",
+      "thumb": "./thumbs/4.jpg",
       "url": "./md/guide-ultime-item.md",
       "type": "md",
       "tags": [
@@ -74,7 +74,7 @@
       "id": "doc-legende-badges",
       "title": "Légende des badges (référence rapide)",
       "description": "Clés manifest, rendu, quand les utiliser. Exemples JSON.",
-      "thumb": "./thumbs/legende-badges.svg",
+      "thumb": "./thumbs/5.jpg",
       "url": "./md/legende-badges.md",
       "type": "md",
       "tags": [
@@ -92,7 +92,7 @@
       "id": "doc-effets-fx",
       "title": "Effets de texte (fx.css) — guide",
       "description": "Surlignage doux, néons, glitch/CRT, variantes saisonnières.",
-      "thumb": "./thumbs/css-fx.svg",
+      "thumb": "./thumbs/6.jpg",
       "url": "./md/guide-effets-fx.md",
       "type": "md",
       "tags": [
@@ -110,7 +110,7 @@
       "id": "doc-faq-depannage",
       "title": "FAQ / Dépannage",
       "description": "Téléchargement cross‑origin, aperçu PDF, chemins, perfs 100+ items.",
-      "thumb": "./thumbs/readme.svg",
+      "thumb": "./thumbs/7.jpg",
       "url": "./md/faq-depannage.md",
       "type": "md",
       "tags": [
@@ -127,7 +127,7 @@
       "id": "doc-5whys",
       "title": "L’idée derrière en 5 « pourquoi »",
       "description": "Pourquoi statique, pourquoi manifest, pourquoi une seule page.",
-      "thumb": "./thumbs/readme.svg",
+      "thumb": "./thumbs/8.jpg",
       "url": "./md/5whys.md",
       "type": "md",
       "tags": [
@@ -144,7 +144,7 @@
       "id": "schema-manifest",
       "title": "Schéma JSON du manifest",
       "description": "Validation des champs : items[].title/url/type/tags…",
-      "thumb": "./thumbs/schema.svg",
+      "thumb": "./thumbs/9.jpg",
       "url": "./schema/manifest.schema.json",
       "type": "other",
       "tags": [
@@ -162,7 +162,7 @@
       "id": "validator-web",
       "title": "Validateur de manifest (web)",
       "description": "Page locale : collez ou ouvrez un manifest, validation live.",
-      "thumb": "./thumbs/validator.svg",
+      "thumb": "./thumbs/10.jpg",
       "run": "./scripts/validate.html",
       "url": "./zips/validator-web.zip",
       "type": "script",
@@ -181,7 +181,7 @@
       "id": "generator-cli",
       "title": "Générateur de manifest (CLI)",
       "description": "Scanne un dossier, produit manifest.json (title/url/type/size/created).",
-      "thumb": "./thumbs/generator.svg",
+      "thumb": "./thumbs/1.jpg",
       "url": "./zips/manifest-generator-cli.zip",
       "type": "zip",
       "tags": [
@@ -199,7 +199,7 @@
       "id": "editor-gui",
       "title": "Éditeur graphique d’items (web)",
       "description": "Formulaire pour créer/éditer un item puis exporter le JSON.",
-      "thumb": "./thumbs/editor-gui.svg",
+      "thumb": "./thumbs/2.jpg",
       "run": "./scripts/editor.html",
       "url": "./zips/editor-gui.zip",
       "type": "script",
@@ -218,7 +218,7 @@
       "id": "readme-github",
       "title": "README pour GitHub",
       "description": "Présentation courte, démarrage, licence.",
-      "thumb": "./thumbs/readme.svg",
+      "thumb": "./thumbs/3.jpg",
       "url": "./md/README.md",
       "type": "md",
       "tags": [
@@ -235,7 +235,7 @@
       "id": "licence-mit",
       "title": "LICENCE — MIT",
       "description": "Licence permissive recommandée.",
-      "thumb": "./thumbs/license.svg",
+      "thumb": "./thumbs/4.jpg",
       "url": "./md/LICENSE-MIT.md",
       "type": "md",
       "tags": [
@@ -252,7 +252,7 @@
       "id": "contributing",
       "title": "CONTRIBUTING — comment contribuer",
       "description": "Issues, PR, style, validation du manifest.",
-      "thumb": "./thumbs/contributing.svg",
+      "thumb": "./thumbs/5.jpg",
       "url": "./md/CONTRIBUTING.md",
       "type": "md",
       "tags": [
@@ -270,7 +270,7 @@
       "id": "issue-templates",
       "title": "Issue templates (GitHub)",
       "description": "Bug report, feature request, question.",
-      "thumb": "./thumbs/issues.svg",
+      "thumb": "./thumbs/6.jpg",
       "url": "./zips/issue-templates.zip",
       "type": "zip",
       "tags": [
@@ -288,7 +288,7 @@
       "id": "thumbs-pack",
       "title": "Pack de vignettes 16:9 (exemples)",
       "description": "Fonds sobres mint/lilac, titres lisibles.",
-      "thumb": "./thumbs/thumbs-pack.svg",
+      "thumb": "./thumbs/7.jpg",
       "url": "./zips/thumbs-pack.zip",
       "type": "zip",
       "tags": [
@@ -305,7 +305,7 @@
       "id": "themes-pack",
       "title": "Pack de thèmes badges/FX",
       "description": "Halloween, Noël, Vaporwave (CSS prêts).",
-      "thumb": "./thumbs/themes.svg",
+      "thumb": "./thumbs/8.jpg",
       "url": "./zips/themes-pack.zip",
       "type": "zip",
       "tags": [
