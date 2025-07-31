@@ -11,21 +11,28 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"         # (dark, default, air, aqua, neon, etc.)
 
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache   # ← indispensable pour {% include_cached %}
+  - jekyll-paginate         # pour la pagination
 
 defaults:
   - scope:
       path: "o"
-      type: "pages"
+      type: "posts"
     values:
       layout: "single"      # layout Minimal Mistakes
+      classes: wide
       share: true           # boutons de partage
       author_profile: false
       read_time: false
       toc: false
       # show_title: false
+      header:
+        overlay_image: /assets/img/bxl-header.jpg
+        overlay_filter: "0.3"
+        caption: "Entre brume et ruines"
 
 permalink: /:path/:basename/   # propre pour pages
 
