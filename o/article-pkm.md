@@ -5,10 +5,6 @@ title: "Solutions « Personal Knowledge Management »"
 description: "Le PKM n’est pas un simple classement ; c’est une approche stratégique qui vous permet de capturer l’essentiel, de relier les idées et de passer à l’action. Solutions logicielles et arbre de décision pour faire votre choix avant de se lancer concrètement."
 permalink: /o/article-pkm/
 image: "{{ '/thumbs/logo.jpg' | relative_url }}"   # SEO
-header:
-  image: "{{ '/thumbs/logo.jpg' | relative_url }}" # Bannière visible
-  caption: "Illustration du PKM"
-  overlay_filter: 0.5
 date: 2025-07-30
 tags: ["doc", "agir"]
 share: true
