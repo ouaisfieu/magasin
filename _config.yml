@@ -25,7 +25,7 @@ defaults:
       author_profile: false
       read_time: false
       toc: false
-      show_title: false
+      # show_title: false
 
 permalink: /:path/:basename/   # propre pour pages
 
