@@ -13,7 +13,7 @@ tags: ["comprendre", "doc"]
 
 Le terme pop culture est vague, mais on peut le définir comme l’ensemble des productions culturelles qui dominent la société de masse à une époque donnée...
 
-![Aperçu]({{ '/gifs/lapin.gif' | relative_url }})
+![Aperçu]({{ '/thumbs/lapin.gif' | relative_url }})
 
 <div class="info-box"><strong>Type :</strong> pdf · <strong>Taille :</strong> 57 Ko · <strong>Date :</strong> 2025-07-23</div>
 
