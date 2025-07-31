@@ -28,3 +28,7 @@ defaults:
       toc: false
 
 permalink: /:path/:basename/   # propre pour pages
+
+# navigation
+nav:
+  main: main
