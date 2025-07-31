@@ -13,7 +13,7 @@ tags: ["interne", "doc"]
 
 Document de travail interne. 6 dossiers en 5 pages... et c'est du lourd. Le rapport entre information et pouvoir toujours, et les pratiques participatives ou encore la veille citoyenne
 
-![Aperçu](/thumbs/logo.jpg)
+![Aperçu](./thumbs/logo.jpg)
 
 <div class="info-box">
 <strong>Type :</strong> pdf &nbsp;•&nbsp; <strong>Taille :</strong> 31 Ko &nbsp;•&nbsp; <strong>Date :</strong> 2025-06-26
