@@ -9,7 +9,7 @@ author_profile: false
 date: 2025-06-26
 tags: ["interne", "doc"]
 ---
-# Approche critique du corpus - 07/2025
+
 
 Document de travail interne. 6 dossiers en 5 pages... et c'est du lourd. Le rapport entre information et pouvoir toujours, et les pratiques participatives ou encore la veille citoyenne
 
