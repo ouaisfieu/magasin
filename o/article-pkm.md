@@ -8,6 +8,12 @@ image: "{{ '/thumbs/logo.jpg' | relative_url }}"
 date: 2025-07-30
 share: true
 tags: ["doc", "agir"]
+header:
+  image: "{{ '/thumbs/logo.jpg' | relative_url }}"
+  caption: "Illustration du PKM"
+  overlay_filter: 0.5   # optionnel (assombrir l’image)
+  overlay_color: "#000" # optionnel
+
 ---
 
 
