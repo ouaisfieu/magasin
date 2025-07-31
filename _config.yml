@@ -6,15 +6,25 @@ title: "ouaisfi·eu"
 description: "Magasin de fichiers, scripts et ressources à télécharger"
 default_image: "/assets/og-default.jpg"
 
-markdown: kramdown
-theme: minima
+# Active Minimal Mistakes sans Gemfile
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark"         # (dark, default, air, aqua, neon, etc.)
 
 plugins:
-  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
 
-# Applique le layout par défaut aux pages de o/
+# Image OG par défaut
 defaults:
   - scope:
       path: "o"
+      type: "pages"
     values:
-      layout: "default"
+      layout: "single"      # layout Minimal Mistakes
+      share: true           # boutons de partage
+      author_profile: false
+      read_time: false
+      toc: false
+
+permalink: /:path/:basename/   # propre pour pages
