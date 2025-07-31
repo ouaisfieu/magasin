@@ -39,3 +39,11 @@ permalink: /:path/:basename/   # propre pour pages
 # navigation
 nav:
   main: main
+  
+paginate: 5
+paginate_path: "/page:num"
+
+related_posts:
+  enabled: true
+  threshold: 1
+  max_count: 3
