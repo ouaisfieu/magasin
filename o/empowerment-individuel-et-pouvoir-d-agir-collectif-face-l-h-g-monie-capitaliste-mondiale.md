@@ -13,7 +13,7 @@ tags: ["comprendre", "doc"]
 
 Autonomie et <b>subjectivation</b> néolibérale : Les théoriciens critiques ont montré que l’individu « autonome » dans nos sociétés contemporaines est largement produit par des mécanismes de pouvoir.
 
-![Aperçu]({{ '/gifs/speaker.gif' | relative_url }})
+![Aperçu]({{ '/thumbs/speaker.gif' | relative_url }})
 
 <div class="info-box"><strong>Type :</strong> pdf · <strong>Taille :</strong> 98 Ko · <strong>Date :</strong> 2025-07-21</div>
 
