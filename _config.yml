@@ -1,7 +1,9 @@
+# Si TON SITE est à https://ouaisfieu.github.io/magasin/
+url: "https://ouaisfieu.github.io"   # ⚠️ sans /magasin
+baseurl: "/magasin"                  # ⚠️ avec le slash initial
+
 title: "ouaisfi·eu"
 description: "Magasin de fichiers, scripts et ressources à télécharger"
-baseurl: "/magasin" # vide si ton site est à la racine
-url: "https://ouaisfieu.github.io/magasin" # adapte à ton repo Pages
 default_image: "/assets/og-default.jpg"
 
 markdown: kramdown
@@ -10,18 +12,9 @@ theme: minima
 plugins:
   - jekyll-seo-tag
 
+# Applique le layout par défaut aux pages de o/
 defaults:
   - scope:
       path: "o"
-      type: "pages"
     values:
       layout: "default"
-      css: "/assets/css/custom.css"
-
-include:
-  - assets
-  - o
-
-exclude:
-  - convert_manifest_to_md.py
-  - README.md
