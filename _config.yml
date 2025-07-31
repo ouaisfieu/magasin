@@ -15,7 +15,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Image OG par défaut
 defaults:
   - scope:
       path: "o"
@@ -26,6 +25,7 @@ defaults:
       author_profile: false
       read_time: false
       toc: false
+      show_title: false
 
 permalink: /:path/:basename/   # propre pour pages
 
