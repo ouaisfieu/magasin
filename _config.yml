@@ -1,6 +1,6 @@
 title: "ouaisfi·eu"
 description: "Magasin de fichiers, scripts et ressources à télécharger"
-baseurl: "" # vide si ton site est à la racine
+baseurl: "/magasin" # vide si ton site est à la racine
 url: "https://ouaisfieu.github.io/magasin" # adapte à ton repo Pages
 default_image: "/assets/og-default.jpg"
 
