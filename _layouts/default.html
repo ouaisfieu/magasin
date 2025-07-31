@@ -32,19 +32,27 @@
     "datePublished": "{{ page.date | default: site.time | date_to_xmlschema }}"
   }
   </script>
-
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  <header>
+  <header class="site-header" role="banner">
+    
     <h1>{{ site.title }}</h1>
-    <nav><a href="{{ '/' | relative_url }}">Accueil</a></nav>
+    <div class="wrapper">
+      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav><a href="{{ '/' | relative_url }}">Accueil</a></nav>
+    </div>
   </header>
-  <main>
-    {{ content }}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
   </main>
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </div>
   </footer>
 </body>
 </html>
